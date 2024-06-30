@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="app_name">Telegrammer</string>
+  <string name="title_activity_main">Telegrammer</string>
+  <string name="package_name">com.ikvak.telegrammer</string>
+  <string name="custom_url_scheme">com.ikvak.telegrammer</string>
+</resources>

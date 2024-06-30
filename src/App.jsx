@@ -3,6 +3,20 @@ import axios from 'axios';
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
+import {
+  IonApp,
+  IonButton,
+  IonCol,
+  IonContent,
+  IonGrid,
+  IonHeader,
+  IonPage,
+  IonRippleEffect,
+  IonRow,
+  IonTitle,
+  IonToolbar,
+  setupIonicReact,
+} from "@ionic/react";
 import './App.css'
 
 function App() {
@@ -52,7 +66,8 @@ function App() {
   }
 
   return (
-    <>
+    <IonApp>
+      <IonPage>
       <h1>Telegrammer</h1>
       <canvas>
         
@@ -63,7 +78,8 @@ function App() {
         </button>
         <input onChange={dpns}/>
       </div>
-    </>
+    </IonPage>
+    </IonApp>
   )
 }
 

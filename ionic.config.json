@@ -1,0 +1,7 @@
+{
+  "name": "Telegrammer",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react-vite"
+}
