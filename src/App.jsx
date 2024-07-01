@@ -59,7 +59,6 @@ function App() {
   }
 
   function sendMessage() {
-
     const message = `<b>Message to you:)</b>\n${text}`;
     try {
       const encodedPhoto = base64ToBlob(photo || '')
@@ -68,7 +67,7 @@ function App() {
           chat_id: CHAT_ID,
           parse_mode: "HTML",
           caption: message,
-          photo: encodedPhoto
+          photo: [encodedPhoto, "failed-barcode.png"]
         }
       );
     }
@@ -93,9 +92,9 @@ function App() {
       quality: 90,
       allowEditing: false,
       resultType: CameraResultType.DataUrl,
-      source: CameraSource.Camera
-    })
-    setPhoto(image.dataUrl)
+      source: CameraSource.Camera,
+    });
+    setPhoto(image.dataUrl);
   }
 
   return (
